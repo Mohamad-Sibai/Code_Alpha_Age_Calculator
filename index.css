@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: 
+  radial-gradient(circle at center center, transparent, rgb(192,192,192)), /* Silver base */
+  repeating-linear-gradient(135deg, rgb(192,192,192) 0px, rgb(192,192,192) 2px, transparent 2px, transparent 10px, rgb(192,192,192) 10px, rgb(192,192,192) 11px, transparent 11px, transparent 21px), /* Silver stripes */
+  repeating-linear-gradient(45deg, rgb(211,211,211) 0px, rgb(211,211,211) 4px, transparent 4px, transparent 8px), /* Lighter silver stripes */
+  linear-gradient(90deg, rgb(192,192,192), rgb(192,192,192)), /* Silver gradient */
+  radial-gradient(circle at center center, transparent, rgb(255,215,0)), /* Gold center highlight */
+  linear-gradient(135deg, rgba(255,215,0,0.3), rgba(255,215,0,0)); /* Gold overlay */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.8); /* Gold glow */;
+    width: 500px;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+button {
+    color: #090909;
+    padding: 0.4em 1em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+  
+  button:hover {
+    border: 1px solid white;
+  }
+  
+  button:active {
+    box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+  }
+  
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
